@@ -167,12 +167,12 @@ ul {
 .hero {
   margin-top: 0;
 
-  background-color: var(--hero-color);
+  /* background-color: var(--hero-color); */
 
   text-align: center;
-  /* padding: 200px 0; */
   background-image: url(../images/Img_hero-min.jpg);
-  background-repeat: no-repeat;
+  
+ 
 }
 
 .section.hero {
@@ -352,6 +352,7 @@ h2.team {
 
 .team-list > .item {
   width: 270px;
+  max-height: 428px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -364,6 +365,34 @@ h2.team {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.back-color:hover {
+  display: inline-block;
+  background-color:var(--accent-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.accent-item:hover {
+  fill: #ffffff;
+}
+.accent-item {
+  fill: #2f303a ;
+}
+
+.about-link{
+display: block;
+}
+
+.list-link {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  align-content: center;
+}
+
+
+
 
 .team-list > .item.item:not(:last-child) {
   margin-right: 30px;
@@ -374,6 +403,7 @@ h2.team {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 /* footer */
