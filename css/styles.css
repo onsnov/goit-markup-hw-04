@@ -121,10 +121,8 @@ ul {
   margin-right: 50px;
 }
 
-
-
 .icon-mail {
-  fill:#757575;
+  fill: #757575;
 }
 .icon-mail:hover {
   fill: var(--accent-color);
@@ -171,8 +169,6 @@ ul {
 
   text-align: center;
   background-image: url(../images/Img_hero-min.jpg);
-  
- 
 }
 
 .section.hero {
@@ -329,14 +325,6 @@ h2.team {
   letter-spacing: 0.03em;
 }
 
-.section {
-  padding: 94px 0;
-}
-
-.section.color {
-  background-color: #f5f4fa;
-}
-
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -366,33 +354,33 @@ h2.team {
   padding-bottom: 30px;
 }
 .back-color:hover {
-  display: inline-block;
-  background-color:var(--accent-color);
+  display: block;
+  background-color: var(--accent-color);
+
   border-radius: 50%;
   width: 44px;
   height: 44px;
 }
-.accent-item:hover {
-  fill: #ffffff;
+
+.accent-item:hover,
+.accent-item:focus {
+  fill: var(--button-text-color);
 }
 .accent-item {
-  fill: #2f303a ;
+  fill: #afb1b8;
 }
 
-.about-link{
-display: block;
+.about-link {
+  display: block;
 }
 
 .list-link {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 30px;
   align-content: center;
 }
-
-
-
 
 .team-list > .item.item:not(:last-child) {
   margin-right: 30px;
@@ -404,6 +392,25 @@ display: block;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+
+<!-- our clients -- > .clients {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section.color {
+  background-color: #f5f4fa;
+  margin-bottom: 94px;
 }
 
 /* footer */
