@@ -123,12 +123,15 @@ ul {
 
 .icon-mail {
   fill: #757575;
+  margin-right: 10px;
+  text-emphasis: none;
 }
 .icon-mail:hover {
   fill: var(--accent-color);
 }
 .icon-tel {
   fill: #757575;
+  margin-right: 10px;
 }
 
 .icon-tel:hover {
@@ -161,15 +164,30 @@ ul {
   color: var(--accent-color);
 }
 
+.auth-nav .test {
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
 /* hero */
-.hero {
+.section.hero {
   margin-top: 0;
 
   /* background-color: var(--hero-color); */
 
   text-align: center;
-  background-image: url(../images/Img_hero-min.jpg);
-}
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid green;
+   background-image: linear-gradient(to right,
+   rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/Img_hero-min.jpg);
+    
+   }
 
 .section.hero {
   padding-top: 200px;
@@ -245,14 +263,16 @@ ul {
 .advantages-list > .item {
   width: calc((100%-120px) / 4);
 }
-.advantages-list .icon {
-  display: inline-block;
-  background-color: #f5f4fa;
+
+.advantages-icon {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  background-color: #f5f4fa;
 }
-
+.advantages-icon > .icon {
+  margin: 25px 100px;
+}
 .advantages-title {
   margin-bottom: 10px;
 
@@ -345,6 +365,7 @@ h2.team {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: #fff;
 }
@@ -353,13 +374,18 @@ h2.team {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.back-color:hover {
+.back-color {
+  /* margin-top: 30px; */
+
   display: block;
-  background-color: var(--accent-color);
+  background-color: var(--button-text-color);
 
   border-radius: 50%;
   width: 44px;
   height: 44px;
+}
+.back-color:hover {
+  background-color: var(--accent-color);
 }
 
 .accent-item:hover,
@@ -394,16 +420,63 @@ h2.team {
   margin-bottom: 16px;
 }
 
-<!-- our clients -- > .clients {
+/* <!-- our clients -- >  */
+
+.clients {
+  display: block;
   color: var(--secondary-text-color);
 
-  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+.container.clients {
+  background-color: var(--button-text-color);
+  margin: 0;
+  display: inline;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.list-icon {
+  padding: 16px 32px;
+
+  display: inline;
+  width: 170px;
+  height: 92px;
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.list-icon {
+  fill: #afb1b8;
+}
+
+.list-icon:hover,
+.list-icon:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.list-icon:hover,
+.list-icon:focus {
+  fill: var(--accent-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-list li:not(:last-child) {
+  margin-right: 30px;
+}
 .section {
   padding: 94px 0;
 }
@@ -477,6 +550,53 @@ a.footer-webstudio {
 .adress:hover {
   color: var(--accent-color);
 }
+address {
+  display: flex;
+}
+.adress-footer {
+  display: block;
+}
+.title-link {
+  display: inline-block;
+   
+  margin-bottom: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+}
+
+.border {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.border-color {
+  margin: 12px;
+  fill: var(--button-text-color);
+}
+
+.border:hover{
+  background-color: var(--accent-color);
+}
+
+.list-footel-link{
+  display: flex;
+  
+}
+
+.footer-link  {
+  margin-left: 70px;
+}
 /* portfolio.html */
 
 /* filter */
@@ -539,10 +659,11 @@ a.footer-webstudio {
   margin-right: 30px;
 } */
 
-/* .works-list > .item {
-  width: 370px;
-  margin-bottom: 30px;
-} */
+ .works-list > .item:hover  
+ {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  
+} 
 
 /* .works-list > .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
