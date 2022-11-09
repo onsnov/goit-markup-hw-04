@@ -474,7 +474,7 @@ justify-content: center; */
 }
 .clients-title {
   margin-bottom: 50px;
-list-icon  font-size: 36px;
+font-size: 36px;
 }
 
 .list-icon {
@@ -706,14 +706,13 @@ address {
 .works-list  .link{
   display: block;
 }
-.works-list  li:hover{
+
+.works-list  .link:hover{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* .works-list > .item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-} */
+
 
 .work-list-about {
   padding-left: 24px;
